@@ -1,9 +1,9 @@
 XPullToRefreshListView
 ======================
 
-Three kind of useful ListView 
+A library includes three kind of useful ListView 
 
-Includes
+Library Includes
 =======
 * 1.PullToRefreshListView  下拉刷新
 * 2.LoadMoreListView       到底部自动加载更多
@@ -11,9 +11,14 @@ Includes
 
 Install
 ===
+1.
 ```shell
 git clone https://github.com/Jayin/XPullToRefreshListView.git
 ```
+
+2.add this library:
+your own project properties -> Android —> Library "add" this project
+ 
 
 
 Quick start(PullAndLoadListView)
