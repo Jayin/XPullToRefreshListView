@@ -29,7 +29,7 @@ Quick start(PullAndLoadListView)
         android:id="@+id/xlistview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-    </com.costum.android.widget.PullAndLoadListView>
+    </com.coustom.widget.PullAndLoadListVieww>
 ```
 
 ### Activity
