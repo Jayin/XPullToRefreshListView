@@ -16,7 +16,6 @@ import android.widget.RelativeLayout;
 
 public class LoadMoreListView extends ListView implements OnScrollListener {
 
-	private static final String TAG = "LoadMoreListView";
 
 	/**
 	 * Listener that will receive notifications every time the list scrolls.
@@ -139,7 +138,6 @@ public class LoadMoreListView extends ListView implements OnScrollListener {
 	}
 
 	public void onLoadMore() {
-		Log.d(TAG, "onLoadMore");
 		if (mOnLoadMoreListener != null) {
 			mOnLoadMoreListener.onLoadMore();
 		}

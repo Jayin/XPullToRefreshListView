@@ -18,21 +18,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.AbsListView.OnScrollListener;
 
-/*Copyright (C) 2011 Johan Nilsson <http://markupartist.com>
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
-
- http://www.apache.org/licenses/LICENSE-2.0
-
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
- */
-
 public class PullToRefreshListView extends ListView implements OnScrollListener {
 
 	private static final int TAP_TO_REFRESH = 1;
@@ -40,7 +25,6 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
 	private static final int RELEASE_TO_REFRESH = 3;
 	protected static final int REFRESHING = 4;
 
-	protected static final String TAG = "PullToRefreshListView";
 
 	private OnRefreshListener mOnRefreshListener;
 
@@ -361,7 +345,6 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
 	}
 
 	public void onRefresh() {
-		Log.d(TAG, "onRefresh");
 
 		if (mOnRefreshListener != null) {
 			mOnRefreshListener.onRefresh();
@@ -383,7 +366,6 @@ public class PullToRefreshListView extends ListView implements OnScrollListener 
 	 * Resets the list to a normal state after a refresh.
 	 */
 	public void onRefreshComplete() {
-		Log.d(TAG, "onRefreshComplete");
 
 		resetHeader();
 
