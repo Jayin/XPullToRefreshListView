@@ -9,6 +9,11 @@ Library Includes
 * 2.LoadMoreListView       到底部自动加载更多
 * 3.PullAndLoadListView   下拉刷新+到底部自动加载更多
 
+Feature of PullAndLoadListView  (added in 2014.1.15)
+* add funcion `canLoadMore()` to help you control whetherthe data can load more and update the footView  or not 
+
+
+
 Install
 ===
 1.
@@ -51,10 +56,30 @@ Quick start(PullAndLoadListView)
 
 			public void onLoadMore() {
                   //start a task here
-			 	lv.onLoadMoreComplete(); //you must call this method when you finish your task
+              new Task().excute();
+			 //	lv.onLoadMoreComplete(); //you must call this method when you finish your task
 			}
 		});
    
+```
+
+```java
+class Task extends AsyncTask<Void, Void, Void> {
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			//do the long-time work here
+			return null;
+		}
+
+		@Override
+		protected void onPostExecute(Void result) {
+		   // lv.canLoadMore(false);//if you found that you can't load more data(Like:page is in the end),called this method and listview won't loadmore again!
+		    lv.onLoadMoreComplete()
+		}
+
+	}
+
 ```
 
 Advanced
