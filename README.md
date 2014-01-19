@@ -9,8 +9,11 @@ Library Includes
 * 2.LoadMoreListView       到底部自动加载更多
 * 3.PullAndLoadListView   下拉刷新+到底部自动加载更多
 
-Feature of PullAndLoadListView  (added in 2014.1.15)
-* add funcion `canLoadMore()` to help you control whetherthe data can load more and update the footView  or not 
+Feature of PullAndLoadListView  
+* add funcion `canLoadMore()` in `PullAndLoadListView` to help you control whetherthe data can load more and update the footView  or not  
+  (added in 2014.1.15)  
+* add function `toRefresh()` in `PullToRefreshListView` to manual refresh! 
+  (added in 2014.1.19) 
 
 
 
