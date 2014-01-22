@@ -11,13 +11,13 @@ Library Includes
 
 Feature of PullAndLoadListView  
 * add function `setCanRefresh(boolean canRefresh, String text)` and `setCanRefresh(boolean canRefrsh)`  
-  It's familiar to  `canLoadMore()` .But in here,it's his responsiblity to control whether data can be refresh for more. 
+  It's familiar to  `setCanLoadMore()` .But in here,it's his responsiblity to control whether data can be refresh for more. 
   if you know that it hava no more data to refresh, called `setCanRefresh()` _to tell user about that!_  
   NOTE THAT: you _have to_ called this method _after_ `onRefreshComplete()`   
   (added in 2014.1.19) 
 * add function `toRefresh()` in `PullToRefreshListView` to manual refresh!     
   (added in 2014.1.19) 
-* add funcion `canLoadMore()` in `PullAndLoadListView` to help you control whetherthe data can load more and update the footView  or not  
+* add funcion `setCanLoadMore()` in `PullAndLoadListView` to help you control whetherthe data can load more and update the footView  or not  
   (added in 2014.1.15)  
 
 

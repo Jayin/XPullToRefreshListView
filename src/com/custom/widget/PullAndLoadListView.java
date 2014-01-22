@@ -112,7 +112,7 @@ public class PullAndLoadListView extends PullToRefreshListView {
 	 * 
 	 * @param canLoadMore
 	 */
-	public void canLoadMore(boolean canLoadMore) {
+	public void setCanLoadMore(boolean canLoadMore) {
 		this._canLoadMore = canLoadMore;
 	}
 
