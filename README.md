@@ -13,6 +13,7 @@ Feature of PullAndLoadListView
 ===
 * add function `setCanRefresh(boolean canRefresh, boolean ableToShowHeadView)`  
   to control if set whether it's able to show the headView when it can't refresh  
+   NOTE THAT: you _have to_ called this method _before_ `onRefreshComplete()`   
   (add in 2014.1.24)
 * add function `setCanRefresh(boolean canRefresh, String text)` and `setCanRefresh(boolean canRefrsh)`  
   It's familiar to  `setCanLoadMore()` .But in here,it's his responsiblity to control whether data can be refresh for more. 
