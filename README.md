@@ -10,6 +10,10 @@ Library Includes
 * 3.PullAndLoadListView   下拉刷新+到底部自动加载更多
 
 Feature of PullAndLoadListView  
+===
+* add function `setCanRefresh(boolean canRefresh, boolean ableToShowHeadView)`  
+  to control if set whether it's able to show the headView when it can't refresh  
+  (add in 2014.1.24)
 * add function `setCanRefresh(boolean canRefresh, String text)` and `setCanRefresh(boolean canRefrsh)`  
   It's familiar to  `setCanLoadMore()` .But in here,it's his responsiblity to control whether data can be refresh for more. 
   if you know that it hava no more data to refresh, called `setCanRefresh()` _to tell user about that!_  
